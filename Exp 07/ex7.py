@@ -28,8 +28,8 @@ def sender(frames, window_size, start_frame):
         input("Press Enter to run the receiver...")  # Wait for Enter key press to proceed
         if not receiver():
             print("NACK received: Frame mismatch de+tected.")
-        
-        break  # Exit after sending one window worth of frames
+            break
+        #break  # Exit after sending one window worth of frames
     return sent_frames
 
 def receiver():
